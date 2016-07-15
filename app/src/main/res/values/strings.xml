@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Interview</string>
+    <string name="sq">Simple Questions</string>
+    <string name="tq">Tough Questions</string>
+    <string name="see_other_apps">See our other apps</string>
+    <string name="rate_app">Rate App</string>
+</resources>

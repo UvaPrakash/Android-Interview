@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="simple_questions">
+        <item>What is AngularJS?</item>
+        <item>What is data binding in AngularJS?</item>
+        <item>What is scope in AngularJS?</item>
+        <item>What are the controllers in AngularJS?</item>
+        <item>What are the services in AngularJS?</item>
+        <item>What are the filters in AngularJS?</item>
+        <item>Explain directives in AngularJS.</item>
+        <item>Explain templates in AngularJS.</item>
+        <item>What is routing in AngularJS?</item>
+        <item>What is deep linking in AngularJS?</item>
+        <item>What are the advantages of AngularJS?</item>
+        <item>What are the disadvantages of AngularJS?</item>
+        <item>What are the core directives of AngularJS?</item>
+        <item>Explain AngularJS boot process.</item>
+        <item>What is MVC?</item>
+        <item>Explain ng-app directive.</item>
+        <item>Explain ng-model directive.</item>
+        <item>Explain ng-bind directive.</item>
+        <item>Explain ng-controller directive.</item>
+        <item>How AngularJS integrates with HTML?</item>
+        <item>Explain ng-init directive.</item>
+        <item>Explain ng-repeat directive.</item>
+        <item>What are AngularJS expressions?</item>
+        <item>Explain uppercase filter.</item>
+        <item>Explain lowercase filter.</item>
+        <item>Explain currency filter.</item>
+        <item>Explain filter filter.</item>
+        <item>Explain orderby filter.</item>
+        <item>Explain ng-disabled directive.</item>
+        <item>Explain ng-show directive.</item>
+        <item>Explain ng-hide directive.</item>
+        <item>Explain ng-click directive.</item>
+        <item>How angular.module works?</item>
+        <item>How to validate data in AngularJS?</item>
+        <item>Explain ng-include directive.</item>
+        <item>How to make an ajax call using Angular JS?</item>
+        <item>What is use of $routeProvider in AngularJS?</item>
+        <item>What is $rootScope?</item>
+        <item>What is scope hierarchy in AngularJS?</item>
+        <item>What is a service?</item>
+        <item>What is service method?</item>
+        <item>What is factory method?</item>
+        <item>What are the differences between service and factory methods?</item>
+        <item>Which components can be injected as a dependency in AngularJS?</item>
+        <item>What is provider?</item>
+        <item>What is constant?</item>
+        <item>Is AngularJS extensible?</item>
+        <item>On which types of component can we create a custom directive?</item>
+        <item>What is internationalization?</item>
+        <item>How to implement internationalization in AngularJS?</item>
+    </string-array>
+</resources>

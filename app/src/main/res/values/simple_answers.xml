@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="simple_answers">
+        <item>AngularJS is a framework to build large scale and high performance web application while keeping them as easy-to-maintain. Following are the features of AngularJS framework.
+                -AngularJS is a powerful JavaScript based development framework to create RICH Internet Application (RIA).
+                -AngularJS provides developers options to write client side application (using JavaScript) in a clean MVC (Model View Controller) way.
+                -Application written in AngularJS is cross-browser compliant. AngularJS automatically handles JavaScript code suitable for each browser.
+                -AngularJS is open source, completely free, and used by thousands of developers around the world. It is licensed under the Apache License version 2.0.</item>
+        <item>Data binding is the automatic synchronization of data between model and view components. ng-model directive is used in data binding.</item>
+        <item>Scopes are objects that refer to the model. They act as glue between controller and view.</item>
+        <item>Controllers are JavaScript functions that are bound to a particular scope. They are the prime actors in AngularJS framework and carry functions to operate on data and decide which view is to be updated to show the updated model based data.</item>
+        <item>AngularJS come with several built-in services. For example $http service is used to make XMLHttpRequests (Ajax calls). Services are singleton objects which are instantiated only once in app.</item>
+        <item>Filters select a subset of items from an array and return a new array. Filters are used to show filtered items from a list of items based on defined criteria.</item>
+        <item>Directives are markers on DOM elements (such as elements, attributes, css, and more). These can be used to create custom HTML tags that serve as new, custom widgets. AngularJS has built-in directives (ng-bind, ng-model, etc) to perform most of the task that developers have to do.</item>
+        <item>Templates are the rendered view with information from the controller and model. These can be a single file (like index.html) or multiple views in one page using "partials".</item>
+        <item>It is concept of switching views. AngularJS based controller decides which view to render based on the business logic.</item>
+        <item>Deep linking allows you to encode the state of application in the URL so that it can be bookmarked. The application can then be restored from the URL to the same state.</item>
+        <item>Following are the advantages of AngularJS.
+                -AngularJS provides capability to create Single Page Application in a very clean and maintainable way.
+                -AngularJS provides data binding capability to HTML thus giving user a rich and responsive experience.
+                -AngularJS code is unit testable.
+                -AngularJS uses dependency injection and make use of separation of concerns.
+                -AngularJS provides reusable components.
+                -With AngularJS, developer writes less code and gets more functionality.
+                -In AngularJS, views are pure html pages, and controllers written in JavaScript do the business processing.
+                -AngularJS applications can run on all major browsers and smart phones including Android and iOS based phones/tablets.</item>
+        <item>Following are the disadvantages of AngularJS.
+                -Not Secure − Being JavaScript only framework, application written in AngularJS are not safe. Server side authentication and authorization is must to keep an application secure.
+                -Not degradable − If your application user disables JavaScript then user will just see the basic page and nothing more.</item>
+        <item>Following are the three core directives of AngularJS.
+                -ng-app − This directive defines and links an AngularJS application to HTML.
+                -ng-model − This directive binds the values of AngularJS application data to HTML input controls.
+                -ng-bind − This directive binds the AngularJS Application data to HTML tags.</item>
+        <item>When the page is loaded in the browser, following things happen:
+                -HTML document is loaded into the browser, and evaluated by the browser. AngularJS JavaScript file is loaded; the angular global object is created. Next, JavaScript which registers controller functions is executed.
+                -Next AngularJS scans through the HTML to look for AngularJS apps and views. Once view is located, it connects that view to the corresponding controller function.
+                -Next, AngularJS executes the controller functions. It then renders the views with data from the model populated by the controller. The page gets ready.</item>
+        <item>Model View Controller or MVC as it is popularly called, is a software design pattern for developing web applications. A Model View Controller pattern is made up of the following three parts:
+                -Model − It is the lowest level of the pattern responsible for maintaining data.
+                -View − It is responsible for displaying all or a portion of the data to the user.
+                -Controller − It is a software Code that controls the interactions between the Model and View.</item>
+        <item>ng-app directive defines and links an AngularJS application to HTML. It also indicate the start of the application.</item>
+        <item>ng-model directive binds the values of AngularJS application data to HTML input controls. It creates a model variable which can be used with the html page and within the container control( for example, div) having ng-app directive.</item>
+        <item>ng-bind directive binds the AngularJS Application data to HTML tags. ng-bind updates the model created by ng-model directive to be displayed in the html tag whenever user input something in the control or updates the html control's data when model data is updated by controller.</item>
+        <item>ng-controller directive tells AngularJS what controller to use with this view. AngularJS application mainly relies on controllers to control the flow of data in the application. A controller is a JavaScript object containing attributes/properties and functions. Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.</item>
+        <item>AngularJS being a pure javaScript based library integrates easily with HTML.
+                Step 1 − Include angularjs javascript libray in the html page
+                Step 2 − Point to AngularJS app. Next we tell what part of the HTML contains the AngularJS app. This done by adding the ng-app attribute to the root HTML element of the AngularJS app. You can either add it to html element or body element</item>
+        <item>ng-init directive initializes an AngularJS Application data. It is used to put values to the variables to be used in the application.</item>
+        <item>ng-repeat directive repeats html elements for each item in a collection.</item>
+        <item>Expressions are used to bind application data to html. Expressions are written inside double braces like {{ expression}}. Expressions behave in same way as ng-bind directives. AngularJS application expressions are pure JavaScript expressions and outputs the data where they are used.</item>
+        <item>Uppercase filter converts a text to upper case text.</item>
+        <item>Lowercase filter converts a text to lower case text.</item>
+        <item>Currency filter formats text in a currency format.</item>
+        <item>filter filter is used to filter the array to a subset of it based on provided criteria.</item>
+        <item>orderby filter orders the array based on provided criteria.</item>
+        <item>ng-disabled directive disables a given control.</item>
+        <item>ng-show directive shows a given control.</item>
+        <item>ng-hide directive hides a given control.</item>
+        <item>ng-click directive represents a AngularJS click event.</item>
+        <item>angular.module is used to create AngularJS modules along with its dependent modules.</item>
+        <item>AngularJS enriches form filling and validation. We can use $dirty and $invalid flags to do the validations in seamless way. Use novalidate with a form declaration to disable any browser specific validation. Following can be used to track error.
+                $dirty − states that value has been changed.
+                $invalid − states that value entered is invalid.
+                $error − states the exact error.</item>
+        <item>Using AngularJS, we can embed HTML pages within a HTML page using ng-include directive.</item>
+        <item>AngularJS provides $http control which works as a service to make ajax call to read data from the server. The server makes a database call to get the desired records. AngularJS needs data in JSON format. Once the data is ready, $http can be used to get the data from server</item>
+        <item>$routeProvider is the key service which set the configuration of urls, maps them with the corresponding html page or ng-template, and attaches a controller with the same.</item>
+        <item>Scope is a special JavaScript object which plays the role of joining controller with the views. Scope contains the model data. In controllers, model data is accessed via $scope object. $rootScope is the parent of all of the scope variables.</item>
+        <item>Scopes are controllers specific. If we define nested controllers then child controller will inherit the scope of its parent controller.</item>
+        <item>Services are JavaScript functions and are responsible to do specific tasks only. Each service is responsible for a specific task for example, $http is used to make ajax call to get the server data. $route is used to define the routing information and so on. Inbuilt services are always prefixed with $ symbol.</item>
+        <item>Using service method, we define a service and then assign method to it.</item>
+        <item>Using factory method, we first define a factory and then assign method to it.</item>
+        <item>factory method is used to define a factory which can later be used to create services as and when required whereas service method is used to create a service whose purpose is to do some defined task.</item>
+        <item>AngularJS provides a supreme Dependency Injection mechanism. It provides following core components which can be injected into each other as dependencies.
+                -value
+                -factory
+                -service
+                -provider
+                -constant</item>
+        <item>provider is used by AngularJS internally to create services, factory etc. during config phase(phase during which AngularJS bootstraps itself). Provider is a special factory method with a method get() which is used to return the value/service/factory.</item>
+        <item>constants are used to pass values at config phase considering the fact that value cannot be used to be passed during config phase.</item>
+        <item>Yes! In AngularJS we can create custom directive to extend AngularJS existing functionalities.
+
+            Custom directives are used in AngularJS to extend the functionality of HTML. Custom directives are defined using "directive" function. A custom directive simply replaces the element for which it is activated. AngularJS application during bootstrap finds the matching elements and do one time activity using its compile() method of the custom directive then process the element using link() method of the custom directive based on the scope of the directive.</item>
+        <item>AngularJS provides support to create custom directives for following type of elements.
+                Element directives − Directive activates when a matching element is encountered.
+                Attribute − Directive activates when a matching attribute is encountered.
+                CSS − Directive activates when a matching css style is encountered.
+                Comment − Directive activates when a matching comment is encountered.</item>
+        <item>Internationalization is a way to show locale specific information on a website. For example, display content of a website in English language in United States and in Danish in France.</item>
+        <item>AngularJS supports inbuilt internationalization for three types of filters currency, date and numbers. We only need to incorporate corresponding js according to locale of the country. By default it handles the locale of the browser.</item>
+    </string-array>
+</resources>

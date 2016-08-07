@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tough_questions">
+        <item>What is bootstrapping in AngularJS?</item>
+        <item>What does SPA (Single Page Application) mean? How can we implement SPA with Angular?</item>
+        <item>What is the difference between link and compile in Angular.js?</item>
+        <item>Does Angular use the jQuery library?</item>
+        <item>Can AngularJS have multiple ng-app directives in a single page?</item>
+        <item>Explain $q service, deferred and promises.</item>
+        <item>Is AngularJS a library, framework, plugin or a browser extension?</item>
+        <item>Is AngularJS a templating system?</item>
+        <item>Which angular function is used to wrap a raw DOM element or HTML string as a jQuery element?</item>
+        <item>What is notion of “isolate” scope object when creating a custom directive? How is it different from the normal scope object?</item>
+    </string-array>
+</resources>

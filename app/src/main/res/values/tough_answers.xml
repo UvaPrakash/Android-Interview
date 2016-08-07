@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="tough_answers">
+    <string-array name="tough_answers" formatted="false">
         <item>Bootstrapping in AngularJS is nothing but initializing, or starting the Angular app. AngularJS supports automatic and manual bootstrapping.
                 Automatic Bootstrapping: this is done by adding ng-app directive to the root of the application, typically on the tag or tag if you want angular to bootstrap your application automatically. When angularJS finds ng-app directive, it loads the module associated with it and then compiles the DOM.
                 Manual Bootstrapping: Manual bootstrapping provides you more control on how and when to initialize your angular App. It is useful where you want to perform any other operation before Angular wakes up and compile the page.</item>
@@ -14,10 +14,10 @@
         <item>-‘Promises’ are post processing logics which are executed after some operation/action is completed whereas ‘deferred’ is used to control how and when those promise logics will execute.
               -We can think about promises as “WHAT” we want to fire after an operation is completed while deferred controls “WHEN” and “HOW” those promises will execute.
               -“$q” is the angular service which provides promises and deferred functionality.</item>
-        <item>AngularJS fits the definition of a framework the best, even though it's much more lightweight than a typical framework and that's why many confuse it with a library.
+        <item>AngularJS fits the definition of a framework the best, even though it\'s much more lightweight than a typical framework and that\'s why many confuse it with a library.
 
-              AngularJS is 100% JavaScript, 100% client side and compatible with both desktop and mobile browsers. So it's definitely not a plugin or some other native browser extension.</item>
-        <item>At the highest level, Angular does look like a just another templating system. But there is one important reason why the Angular templating system is different, that makes it very good fit for application development: bidirectional data binding. The template is compiled in the browser and the compilation step produces a live view. This means the developers, don't need to write code to constantly sync the view with the model and the model with the view as in other templating systems.</item>
+              AngularJS is 100% JavaScript, 100% client side and compatible with both desktop and mobile browsers. So it\'s definitely not a plugin or some other native browser extension.</item>
+        <item>At the highest level, Angular does look like a just another templating system. But there is one important reason why the Angular templating system is different, that makes it very good fit for application development: bidirectional data binding. The template is compiled in the browser and the compilation step produces a live view. This means the developers, don\'t need to write code to constantly sync the view with the model and the model with the view as in other templating systems.</item>
         <item>angular.element; If jQuery is available, `angular.element` is an alias for the jQuery function. If jQuery is not available, `angular.element` delegates to Angular’s built-in subset of jQuery, called “jQuery lite” or “jqLite.”</item>
         <item>When creating a custom directive, there is a property called as “scope” which can be assigned different values such as true/false or {}. When assigned with the value “{}”, then a new “isolate” scope is created. The ‘isolate’ scope differs from normal scope in that it does not prototypically inherit from the parent scope. This is useful when creating reusable components, which should not accidentally read or modify data in the parent scope.</item>
     </string-array>

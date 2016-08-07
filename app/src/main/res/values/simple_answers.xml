@@ -41,7 +41,7 @@
                 -Controller − It is a software Code that controls the interactions between the Model and View.</item>
         <item>ng-app directive defines and links an AngularJS application to HTML. It also indicate the start of the application.</item>
         <item>ng-model directive binds the values of AngularJS application data to HTML input controls. It creates a model variable which can be used with the html page and within the container control( for example, div) having ng-app directive.</item>
-        <item>ng-bind directive binds the AngularJS Application data to HTML tags. ng-bind updates the model created by ng-model directive to be displayed in the html tag whenever user input something in the control or updates the html control's data when model data is updated by controller.</item>
+        <item>ng-bind directive binds the AngularJS Application data to HTML tags. ng-bind updates the model created by ng-model directive to be displayed in the html tag whenever user input something in the control or updates the html controls data when model data is updated by controller.</item>
         <item>ng-controller directive tells AngularJS what controller to use with this view. AngularJS application mainly relies on controllers to control the flow of data in the application. A controller is a JavaScript object containing attributes/properties and functions. Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.</item>
         <item>AngularJS being a pure javaScript based library integrates easily with HTML.
                 Step 1 − Include angularjs javascript libray in the html page

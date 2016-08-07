@@ -1,9 +1,89 @@
 package com.example.uva.androidinterview;
 
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by Uva on 7/16/2016 at 11:25 PM.
  */
-public class ToughQuestion extends AppCompatActivity {
+public class ToughQuestion extends AppCompatActivity implements View.OnClickListener {
+    TextView tvquestion, tvanswer, tvtotallength_yy, tvpresentindex_xx;
+    Button bleft, bshow, bright;
+    String[] tough_questions, tough_answers;
+    int index;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.questions);
+
+        //  Initialization of TextView
+        tvquestion = (TextView) findViewById(R.id.tvquestion);
+        tvanswer = (TextView) findViewById(R.id.tvanswer);
+        tvpresentindex_xx = (TextView) findViewById(R.id.tvxx);
+        tvtotallength_yy = (TextView) findViewById(R.id.tvyy);
+
+        //  Initialization of Buttons
+        bleft = (Button) findViewById(R.id.bleft);
+        bshow = (Button) findViewById(R.id.bshowanswer);
+        bright = (Button) findViewById(R.id.bright);
+
+        //  OnClick Listener for 3 Buttons
+        bleft.setOnClickListener(this);
+        bshow.setOnClickListener(this);
+        bright.setOnClickListener(this);
+
+        //  Importing the String array from Values folder
+        tough_questions = getResources().getStringArray(R.array.tough_questions);
+        tough_answers = getResources().getStringArray(R.array.tough_answers);
+
+        //  Setting values to variable and 4 TextViews
+        index = 0;
+        tvquestion.setText(tough_questions[index]);
+        tvanswer.setText("Press \"A\" Button for the Answer");
+        tvpresentindex_xx.setText(String.valueOf(index + 1));
+        tvtotallength_yy.setText("/" + String.valueOf(tough_questions.length));
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.bleft:
+                tvanswer.setText("Press \"A\" Button for the Answer");
+                index--;
+
+                if (index == -1) {
+                    index = tough_questions.length - 1;
+                    tvquestion.setText(tough_questions[index]);
+                    tvpresentindex_xx.setText(String.valueOf(index + 1));
+                } else {
+                    tvquestion.setText(tough_questions[index]);
+                    tvpresentindex_xx.setText(String.valueOf(index + 1));
+
+                }
+                break;
+
+            case R.id.bshowanswer:
+                tvanswer.setText(tough_answers[index]);
+                break;
+
+            case R.id.bright:
+                tvanswer.setText("Press \"A\" Button for the Answer");
+                index++;
+
+                if (index == tough_questions.length) {
+                    index = 0;
+                    tvquestion.setText(tough_questions[index]);
+                    tvpresentindex_xx.setText(String.valueOf(index + 1));
+                } else {
+                    tvquestion.setText(tough_questions[index]);
+                    tvpresentindex_xx.setText(String.valueOf(index + 1));
+                }
+                break;
+        }
+    }
 }

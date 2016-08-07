@@ -75,21 +75,21 @@
 
         <Button
             android:id="@+id/bleft"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@mipmap/left" />
 
         <Button
             android:id="@+id/bshowanswer"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@drawable/a_button"
             />
 
         <Button
             android:id="@+id/bright"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@mipmap/right" />
     </LinearLayout>
 </LinearLayout>

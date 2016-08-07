@@ -4,4 +4,9 @@
     <string name="tq">Tough Questions</string>
     <string name="see_other_apps">See our other apps</string>
     <string name="rate_app">Rate App</string>
+
+    <string name="tv_xx">XX/</string>
+    <string name="tv_yy">YY</string>
+    <string name="tv_answer">Press A button for Answer</string>
+    <string name="tv_question">Question</string>
 </resources>

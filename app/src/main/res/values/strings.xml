@@ -9,4 +9,6 @@
     <string name="tv_yy">YY</string>
     <string name="tv_answer">Press A button for Answer</string>
     <string name="tv_question">Question</string>
+    <string name="tv_frontpage_titlebar">Crack Interview</string>
+    <string name="tv_questions_titlebar">Catego Questions</string>
 </resources>

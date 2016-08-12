@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/questions_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@mipmap/questionstitlebar"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bspeak"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/play" />
+
+    <TextView
+        android:id="@+id/tv_questions_titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_questions_titlebar"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/bmute"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:background="@mipmap/stop" />
+</LinearLayout>

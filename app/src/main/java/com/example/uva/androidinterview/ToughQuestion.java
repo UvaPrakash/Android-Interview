@@ -1,9 +1,11 @@
 package com.example.uva.androidinterview;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
@@ -19,6 +21,16 @@ public class ToughQuestion extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questions);
+
+        //Code to add Action Bar
+        LinearLayout questions_ll = (LinearLayout) findViewById(R.id.questions_title_bar);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.questions_title_bar);
+
+        Button bspeak = (Button) findViewById(R.id.bspeak);
+        Button bmute = (Button) findViewById(R.id.bmute);
+        TextView tv_category = (TextView)findViewById(R.id.tv_questions_titlebar);
+        tv_category.setText("Tough Questions");
 
         //  Initialization of TextView
         tvquestion = (TextView) findViewById(R.id.tvquestion);

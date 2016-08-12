@@ -2,9 +2,11 @@ package com.example.uva.androidinterview;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class FrontPage extends AppCompatActivity implements View.OnClickListener {
 
@@ -14,6 +16,13 @@ public class FrontPage extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.front_page);
+
+        //Code to add Action Bar
+        LinearLayout frontpage_ll = (LinearLayout) findViewById(R.id.frontpage_title_bar);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.frontpage_title_bar);
+
+
 
         bsimple = (Button) findViewById(R.id.bsq);
         btough = (Button) findViewById(R.id.btq);

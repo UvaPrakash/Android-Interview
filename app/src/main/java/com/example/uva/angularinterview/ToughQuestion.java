@@ -1,4 +1,4 @@
-package com.example.uva.androidinterview;
+package com.example.uva.angularinterview;
 
 import android.os.Build;
 import android.os.Bundle;

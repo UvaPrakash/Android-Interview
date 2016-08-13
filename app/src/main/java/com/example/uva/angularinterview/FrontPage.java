@@ -1,4 +1,4 @@
-package com.example.uva.androidinterview;
+package com.example.uva.angularinterview;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;

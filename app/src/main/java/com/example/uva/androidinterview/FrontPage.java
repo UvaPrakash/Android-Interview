@@ -48,6 +48,15 @@ public class FrontPage extends AppCompatActivity implements View.OnClickListener
                 startActivity(j);
                 break;
             case R.id.bseeotherapps:
+                try {
+                    Uri uri = Uri.parse("market://search?q=PublisherName");
+                    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(goToMarket);
+                } catch (ActivityNotFoundException e) {
+                    Uri uri = Uri.parse("http://play.google.com/store/search?q=PublisherName");
+                    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(goToMarket);
+                }
                 break;
             case R.id.brateapp:
                 try {

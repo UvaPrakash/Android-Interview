@@ -1,6 +1,8 @@
 package com.example.uva.androidinterview;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +23,6 @@ public class FrontPage extends AppCompatActivity implements View.OnClickListener
         LinearLayout frontpage_ll = (LinearLayout) findViewById(R.id.frontpage_title_bar);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.frontpage_title_bar);
-
 
 
         bsimple = (Button) findViewById(R.id.bsq);
@@ -49,6 +50,16 @@ public class FrontPage extends AppCompatActivity implements View.OnClickListener
             case R.id.bseeotherapps:
                 break;
             case R.id.brateapp:
+                try {
+                    Uri uri = Uri.parse("market://details?id=" + getPackageName());
+                    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(goToMarket);
+                } catch (ActivityNotFoundException e) {
+                    Uri uri = Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName());
+                    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(goToMarket);
+                }
+
                 break;
         }
     }
